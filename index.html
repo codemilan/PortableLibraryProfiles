@@ -42,7 +42,7 @@
             <td><div ng-repeat="framework in profile.frameworks" class="verticalSpacing"><span title="{{framework.fullName}}">{{framework.friendlyName}}</span></div></td>
             <td ng-show="includeNames"><div ng-repeat="framework in profile.frameworks" class="verticalSpacing">{{framework.fullName}}</div></td>
             <td>{{profile.nugetTarget}}</td>
-            <td><div><div class="verticalSpacing">{{profile.netStandardGeneration}}</div><div class="verticalSpacing">{{profile.dotnetGeneration}}</div></div></td>
+            <td><div><div class="verticalSpacing">{{profile.netStandardGeneration}}</div><div class="verticalSpacing">(legacy TFM: {{profile.dotnetGeneration}})</div></div></td>
             <td ng-show="includeLegacy">
               <div ng-hide="profile.supportedByVisualStudio2013" class="verticalSpacing"><a href="http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/4504987-support-portable-class-libraries-in-vs-2013-for-al">Not supported by VS2013</a></div>
               <div ng-hide="profile.supportedByVisualStudio2015" class="verticalSpacing"><a href="http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/4504987-support-portable-class-libraries-in-vs-2013-for-al">Not supported by VS2015</a></div>
